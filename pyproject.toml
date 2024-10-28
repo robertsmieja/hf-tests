@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "hf-tests"
+version = "0.1.0"
+description = ""
+authors = ["Robert Smieja <robertsmieja@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.11"
+transformers = "^4.46.0"
+datasets = "^3.0.2"
+evaluate = "^0.4.3"
+accelerate = "^1.0.1"
+torch = "^2.5.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.10.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
